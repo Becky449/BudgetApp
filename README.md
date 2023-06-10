@@ -24,7 +24,7 @@
 # 📖 Budget-tracking App <a name="about-project"></a>
 
 [Budget-app] is a classic example of a blog website. It is a functional website that show the list of Categories and associated operations to each categories.
-[video description](https://drive.google.com/file/d/1u0gzAJP0sEVT7LaJ48EY9rsItkdQ2XMm/view?usp=sharing)
+[video description](https://www.loom.com/share/ad26b0986a434402a8732089cc801197)
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -81,7 +81,7 @@ Install this project with:
 ```
     Clone this repository to your desired folder:
 
-`git@github.com:juaryimami/gudget-app.git`
+`https://github.com/Becky449/BudgetApp.git`
 
 cd recipe-app
 

@@ -1,7 +1,7 @@
 databases:
   - name: expenditue-tracking
     databaseName: budgt
-    user: budget-user
+    user: budgt
 
 services:
   - type: web
