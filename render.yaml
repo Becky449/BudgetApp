@@ -1,11 +1,11 @@
 databases:
   - name: expenditue-tracking
-    databaseName: budjet
-    user: budjet
+    databaseName: budgt
+    user: budget-user
 
 services:
   - type: web
-    name: budget-tracking
+    name: budget-mate
     env: ruby
     buildCommand: "./bin/render-build.sh"
     startCommand: "bundle exec puma -C config/puma.rb"
