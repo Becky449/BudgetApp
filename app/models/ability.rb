@@ -6,7 +6,7 @@ class Ability
 
     return unless user.present?
 
-    can(:manage, Category, user: user)
-    can(:manage, Expense, user: user)
+    can(:manage, Category, user:)
+    can(:manage, Expense, user:)
   end
 end
