@@ -1,0 +1,35 @@
+<div class="w-full">
+  <div class="flex gap-6 items-center bg-white px-6 mx-4 h-20 relative">
+    <div style="width: 15%">
+      <%= image_tag @category.icon, alt: 'icon', class: "img" %>
+    </div>
+    <div>
+      <p><%= @category.name %></p>
+      <p class="text-xs"><%= @category.created_at.strftime('%d %B, %Y') %></p>
+    </div>
+    <p class="ml-9 text">$<%= @category.total %></p>
+    <%= button_to '<i class="fa-regular fa-trash-can"></i>'.html_safe, category_path(@category.id), method: :delete, class: "absolute bottom-0 right-0" %>
+  </div>
+  
+  <div class="flex mt-8 items-center flex-col mx-4 gap-6">
+    <h2 class="text text-xl">Expenditure</h2>
+    <%if @category.expenditures.empty? %>
+      <p>No expenditures recorded yet</p>
+    <% else %>
+      <% @category.expenditures.order(created_at: :desc).each do |exp| %>
+        <div class="flex gap-10 items-center bg-white px-6 h-20 relative w-full">
+          <p><%= exp.name %></p>
+          <p>$<%= exp.amount %></p>
+          <%= button_to '<i class="fa-regular fa-trash-can"></i>'.html_safe, category_expenditure_path(@category.id, exp.id), method: :delete, class: "absolute bottom-0 right-0" %>
+        </div>
+      <% end %>
+    <% end %>  
+  </div>
+</div>
+
+<div class="absolute bottom-0 flex flex-col gap-6 w-full">
+    <%= link_to '<i class="fa-solid fa-circle-chevron-left"></i>'.html_safe, categories_path, class: "text-3xl back"%>
+    <button class="btn w-full p-6 text-white ">
+    <%= link_to 'New Expenditure', new_category_expenditure_path(@category.id), class: "border-white border border-solid p-4 w-full pl-20 pr-20" %>
+    </button>
+</div>
