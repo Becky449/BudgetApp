@@ -126,10 +126,11 @@ You can deploy this project using:
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **JUHAR SEID**
+👤 **RABECCA NABWIRE**
 
-- GitHub: [@jbecky449](https://github.com/becky449)
+- GitHub: [@becky449](https://github.com/becky449)
 - LinkedIn: [rabeccanabwire](https://www.linkedin.com/in/rabecca-nabwire/)
+- Twitter: [rabeccanab](https://twitter.com/rabeccanab)
 
 ## 🔭 Future Features <a name="future-features"></a>
 
