@@ -28,7 +28,7 @@
 
 ## 🛠 Built With <a name="built-with"></a>
 
-The Recipe App was built with:
+The Budget App was built with:
 
     - Ruby On Rails
     - PostgreSQL
@@ -83,7 +83,7 @@ Install this project with:
 
 `https://github.com/Becky449/BudgetApp.git`
 
-cd recipe-app
+cd BudgetApp
 
     Install the required gems:
 
@@ -106,7 +106,7 @@ To run the project, execute the following command:
   rails server
 ```
 ### LIVE DEMO
-[Budget-tracking app](https://budgetapp.onrender.com/)
+[Budget-tracking app](https://budget-mate.onrender.com/)
 
 ### Run tests
 
