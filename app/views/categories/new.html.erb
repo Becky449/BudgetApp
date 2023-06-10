@@ -1,0 +1,20 @@
+<div class="w-full mt-6 ">
+<%= form_with model: @category do |form| %>
+  <div class="bg-white">
+   <%= form.text_field :name, placeholder: 'Category name', required: true, class: "w-full" %>
+  </div>
+  <div class="w-full flex flex-col gap-2">
+    <%= form.label :icon, 'Select Icon:', class: "bg-white mt-2" %>
+    <%= form.select :icon, options_for_select([['', ''], ['Investment 💵', 'earning.png'], ['Health 🏥', 'hospital-building.png'],
+    ['Shopping 🛍️', 'shopping-bag.png'], ['Sports ⚽', 'sports.png'], ['Movies 🍿', 'popcorn.png'], ['Travel ✈️', 'transportation.png'],
+    ['Others 📓', 'more.png']], selected: nil), { prompt: 'Icons', class: 'w-full bg-white', size: 16 } %>
+  </div>
+
+  <div class="flex flex-col items-center mt-6">
+    <%= form.submit "Save", class: "btn p-4 rounded-lg text-white" %>
+  </div>
+<% end %>
+</div>
+<div class="absolute bottom-0 flex flex-col gap-6 w-full">
+    <%= link_to '<i class="fa-solid fa-circle-chevron-left"></i>'.html_safe, categories_path, class: "text-3xl back"%>
+</div>
