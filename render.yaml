@@ -1,5 +1,5 @@
 databases:
-  - name: expenditue-tracking
+  - name: expenditure-tracking
     databaseName: budgt
     user: budgt
 
@@ -12,7 +12,7 @@ services:
     envVars:
       - key: DATABASE_URL
         fromDatabase:
-          name: expenditue-tracking
+          name: expenditure-tracking
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
