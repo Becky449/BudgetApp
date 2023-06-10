@@ -17,7 +17,7 @@ class ExpendituresController < ApplicationController
     @expenditure = Expenditure.new(expenditure_params)
     @expenditure.author_id = current_user.id
     if @expenditure.save
-      category_expenditure = CategoryExpenditure.new(category_id: params[:category_id], expenditure_id: @expenditure.id)
+      category_expenditure = CategoryExpenditure.new(category_id: params[:expenditure][:category_id], expenditure_id: @expenditure.id)
       category_expenditure.save
       redirect_to category_path(@category.id)
       flash[:notice] = 'Transaction added'
