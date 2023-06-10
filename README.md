@@ -24,11 +24,11 @@
 # 📖 Budget-tracking App <a name="about-project"></a>
 
 [Budget-app] is a classic example of a blog website. It is a functional website that show the list of Categories and associated operations to each categories.
-[video description](https://drive.google.com/file/d/1u0gzAJP0sEVT7LaJ48EY9rsItkdQ2XMm/view?usp=sharing)
+[video description](https://www.loom.com/share/ad26b0986a434402a8732089cc801197)
 
 ## 🛠 Built With <a name="built-with"></a>
 
-The Recipe App was built with:
+The Budget App was built with:
 
     - Ruby On Rails
     - PostgreSQL
@@ -81,9 +81,9 @@ Install this project with:
 ```
     Clone this repository to your desired folder:
 
-`git@github.com:juaryimami/gudget-app.git`
+`https://github.com/Becky449/BudgetApp.git`
 
-cd recipe-app
+cd BudgetApp
 
     Install the required gems:
 
@@ -106,7 +106,7 @@ To run the project, execute the following command:
   rails server
 ```
 ### LIVE DEMO
-[Budget-tracking app](https://budgetapp.onrender.com/)
+[Budget-tracking app](https://budget-mate.onrender.com/)
 
 ### Run tests
 
@@ -126,10 +126,11 @@ You can deploy this project using:
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **JUHAR SEID**
+👤 **RABECCA NABWIRE**
 
-- GitHub: [@jbecky449](https://github.com/becky449)
+- GitHub: [@becky449](https://github.com/becky449)
 - LinkedIn: [rabeccanabwire](https://www.linkedin.com/in/rabecca-nabwire/)
+- Twitter: [rabeccanab](https://twitter.com/rabeccanab)
 
 ## 🔭 Future Features <a name="future-features"></a>
 

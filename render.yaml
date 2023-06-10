@@ -1,18 +1,18 @@
 databases:
-  - name: expenditue-tracking
-    databaseName: budjet
-    user: budjet
+  - name: expenditure-tracking
+    databaseName: budgt
+    user: budgt
 
 services:
   - type: web
-    name: budget-tracking
+    name: budgeting-mate
     env: ruby
     buildCommand: "./bin/render-build.sh"
     startCommand: "bundle exec puma -C config/puma.rb"
     envVars:
       - key: DATABASE_URL
         fromDatabase:
-          name: expenditue-tracking
+          name: expenditure-tracking
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
