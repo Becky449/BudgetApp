@@ -1,0 +1,21 @@
+<div class="flex mt-8 items-center flex-col w-full cont">
+  <div class="flex flex-col gap-4 w-full">
+    <% @categories.each do |category| %>
+      <%= link_to category_path(category.id.to_s) do %>
+        <div class="flex gap-6 items-center bg-white px-6 mx-4 h-20">
+          <div style="width: 15%">
+            <%= image_tag category.icon, alt: 'icon', class: "img" %>
+          </div>
+          <div>
+            <p><%= category.name %></p>
+            <p><%= category.created_at.strftime('%d %B, %Y') %></p>
+          </div>
+          <p class="ml-9 text">$<%= category.total %></p>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>
+<button class="btn absolute bottom-0 w-full p-6 text-white ">
+  <%= link_to 'Add New Category', new_category_path, class: "border-white border border-solid p-4 w-full pl-20 pr-20" %>
+</button>

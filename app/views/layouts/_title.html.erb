@@ -1,0 +1,20 @@
+<% if current_page?(categories_path)%>
+  Transactions
+<% end %>
+<% if params[:id] && current_page?(category_path(params[:id]))%>
+  Category
+<% end %>
+<% if current_page?(new_category_path)%>
+  Add New Category
+<% end %>
+<% if params[:category_id] && current_page?(new_category_expenditure_path(params[:category_id]))%>
+  Add New Expenditure
+<% end %>
+<% if current_page?(new_user_session_path)%>
+  Log In
+<% end %>
+<% if current_page?(new_user_registration_path)%>
+  Sign Up
+<% end %>
+
+

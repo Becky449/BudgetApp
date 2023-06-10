@@ -1,29 +1,30 @@
-<h2>Sign up</h2>
-
+<div class="w-full mt-6 bg-white px-4">
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  <div class="field mt-2">
+    <%= f.text_field :name, autofocus: true, placeholder: 'Name', autocomplete: "name", class: "w-full forms" %>  
   </div>
 
-  <div class="field">
-    <%= f.label :password %>
+  <div class="field mt-2">
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: 'Email', class: "w-full forms" %>
+  </div>
+
+  <div class="field mt-2">
     <% if @minimum_password_length %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>
     <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
+    <%= f.password_field :password, autocomplete: "new-password", placeholder: 'Password', class: "w-full forms" %>
   </div>
 
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+  <div class="field mt-2">
+    <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: 'Password Confirmation', class: "w-full forms" %>
   </div>
 
-  <div class="actions">
-    <%= f.submit "Sign up" %>
+  <div class="actions flex flex-col items-center mt-6">
+    <%= f.submit "Sign up", class: "btn p-4 rounded-lg text-white" %>
   </div>
 <% end %>
 
 <%= render "devise/shared/links" %>
+</div>

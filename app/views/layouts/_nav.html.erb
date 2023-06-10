@@ -1,0 +1,6 @@
+<nav class="splash w-full flex gap-24 text-white p-6 text-xl">
+  <p><%= link_to '<i class="fa-solid fa-bars"></i>'.html_safe, root_path %></p>
+  <p class="mr-4"><%= render partial: 'layouts/title' %></p>
+  <%= button_to '<i class="fa-solid fa-right-from-bracket"></i>'.html_safe, destroy_user_session_path, method: :delete %>
+  
+</nav>
