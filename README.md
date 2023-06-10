@@ -106,7 +106,7 @@ To run the project, execute the following command:
   rails server
 ```
 ### LIVE DEMO
-[Budget-tracking app](https://budget-tracking.onrender.com/)
+[Budget-tracking app](https://budgetapp.onrender.com/)
 
 ### Run tests
 
@@ -128,9 +128,8 @@ You can deploy this project using:
 
 👤 **JUHAR SEID**
 
-- GitHub: [@juaryimami](https://github.com/juaryimami)
-- Twitter: [@jupack](https://twitter.com/juhar75777)
-- LinkedIn: [juharyimer](https://www.linkedin.com/in/juhar-yimer/)
+- GitHub: [@jbecky449](https://github.com/becky449)
+- LinkedIn: [rabeccanabwire](https://www.linkedin.com/in/rabecca-nabwire/)
 
 ## 🔭 Future Features <a name="future-features"></a>
 
